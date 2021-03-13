@@ -1,0 +1,114 @@
+body {
+    margin: 10;
+    font-family: fantasy;
+  }
+
+  nav {
+    padding: 2%;
+    background-color: darkturquoise;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 20%;
+    display: inline-block;
+    color: floralwhite;
+    border-right: 1px solid white;
+  }
+
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: tomato;
+      font-size: 0.25em;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: left;
+    background-color: #30c048;
+  }
+  
+  #organize-it-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100px;
+    justify-content: space-around;
+    background: #515DA2;
+    opacity: .8;
+    height: 7rem;
+    padding: 1rem;
+  }
+  
+  #organize-it-header img {
+    margin: 20px;
+    height: 6rem;
+    width: auto;
+  }
+  
+  button {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    background-color: orchid;
+    border: none;
+    border-radius: 10px;
+    height: 3rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 30px;
+    justify-self: center;
+  }
+  
+  button:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(218, 135, 41);
+    border: #30c048 solid 1px;
+    color: #e61425;
+  }
+
+  
+  .event-form {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color:wheat;
+  }
+
+  .participant-form {
+    text-align: center;
+    width: 100%;
+    background-color:wheat;
+  }
+
+  .containers {
+    border: 10px solid blue; 
+  }
+  
+  .submit {
+    position: relative;
+    background-color: #554be0;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: serif;
+    margin: 3px;
+  }
+  
+  .submit:hover {
+    background-color: whitesmoke;
+    border: #571ce2 solid 1px;
+    color: #7f4be0;
+  }
+  

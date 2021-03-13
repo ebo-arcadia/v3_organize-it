@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize It!</title>
+
+    <link rel="stylesheet" href="style/event_participant.css">
+    <!-- Why put scripts in the head tag using ? -->
+    <!-- https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup -->
+    <script type="text/javascript" src="src/event.js" defer></script>
+    <script type="text/javascript" src="src/participant.js" defer></script>
+    <script type="text/javascript" src="src/event_participant.js" defer></script>
+  </head>
+
+  <body>
+
+    <nav>
+        <div class="navbar">
+          <h1 class="logo"><strong>Organize It!</strong></h1>
+        </div>
+            <ul>
+              <li><a href="#" id="onlink">Dashboard</a></li>
+              <li><a href="#" id="onlink">Events Tracker</a></li>
+              <li><a href="#" id="onlink">Contacts Manager</a></li>
+              <li><a href="#" id="onlink">Books Lover</a></li>
+              <li><a href="#" id="onlink">Note Pad</a></li>
+              <li><a href="#" id="onlink">Travel Info</a></li>
+            </ul>
+    </nav>
+
+    <div id='organize-it-header'>
+        <img src="https://manula.r.sizr.io/large/user/1134/img/new-user-dashboard_v1.png" alt='dashboard'>
+        <img src="https://www.graystep.com/asbworks/assets/eventtrackerlogo.png" alt='event tracker'>
+        <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/fe/b6/fc/feb6fc95-2d1c-aa4d-05c1-67b9538db4fb/source/512x512bb.jpg" alt='contact manager'>
+        <img src="https://bookclubz.com/static/media/img-banner-4.7f87a631.svg" alt='book club'>
+        <img src="https://clickup.com/blog/wp-content/uploads/2020/01/note-taking.png" alt='note taking'>
+        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/weather-app-4-906203.png" alt='weather'>
+    </div>
+   
+    <div id="container">
+        <form id="event-form" class="event-form">
+            <h2>Add a New Event</h2>
+            <input id="input-event-name" type="text" name="name" placeholder="Event Name"></input>
+            <br>
+            <input id="input-event-description" type="text" name="description" placeholder="Event Description"></input>
+            <br>
+            <input id="create-button" type="submit" name="submit" value="Add this Event" class="submit"></form></input>
+        </form>
+
+        <br>
+        <br>
+
+        <form id="participant-form" class="participant-form">
+            <h2>Add Participants</h2>
+            <label>Full Name:</label>
+            <input id="full-name" type="text" name="fullname" placeholder="Full Name"></input>
+            <br>
+            <label>Email:</label>
+            <input id="email" type="text" name="email" placeholder="Email"></input>
+            <br>
+            <label>Phone Number:</label>
+            <input id="phone-number" type="text" name="phonenumber" placeholder="Phone Number"></input>
+            <br>
+
+            <p>Select an Event</p>
+            <select id="event-list" name="event-list">
+
+            </select>
+
+            <br>
+            <input id="create-button" type="submit" name="submit" value="Add Participant" class="submit">
+        </form>
+
+    </div>
+
+    <div id="containers" class="containers">
+        <div id="event-selector">
+            <h2><strong></strong>Current event and participants<strong</h2>
+        </div>
+
+        <br>
+
+        <div id="card-container" class="single-card">
+
+        </div>
+    </div>
+
+
+  </body>
+</html>
